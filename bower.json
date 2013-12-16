@@ -1,0 +1,12 @@
+{
+	"name": "ractive-adaptors-Promise",
+	"version": "0.1.0",
+	"author": "Luchs",
+	"main": "Ractive-adaptors-Promise.js",
+	"ignore": [
+		"**/.*",
+		"src",
+		"test",
+		"Gruntfile.js"
+	]
+}
