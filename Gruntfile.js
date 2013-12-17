@@ -76,4 +76,10 @@ module.exports = function ( grunt ) {
 		'copy'
 	]);
 
+	grunt.registerTask( 'test', [
+		'jshint',
+		'concat',
+		'qunit'
+	]);
+
 };
