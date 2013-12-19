@@ -8,9 +8,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' href='demo/main.css'>
 
-	<!-- TODO add styles specific to this demo -->
+	<!-- styles specific to this demo -->
 	<style type='text/css'>
-
+		/* none! */
 	</style>
 </head>
 
@@ -22,13 +22,19 @@
 	<header>
 		<h1>Ractive.js Promise adaptor plugin</h1>
 		<p class='strap'>
-			<span class='download'>download: <a href='[TODO]'>Ractive-adaptors-Promise.js</a></span>
+			<span class='download'>download: <a href='Ractive-adaptors-Promise.js'>Ractive-adaptors-Promise.js</a></span>
 			<span class='more-plugins'>more plugins at <a href='http://ractivejs.org/plugins'>ractivejs.org/plugins</a></span>
 		</p>
 	</header>
 
 	<main>
-		<p>TODO A description of the plugin goes here...</p>
+		<p>This plugin allows adding <a href="http://promises-aplus.github.io/promises-spec/">promises</a> directly as Ractive data objects. The promise will then be replaced by the object it resolved to.</p>
+
+		<p>If you're replacing a promise before it resolved to something, the wrapper takes care not to show any intermediate values. This makes it possible to issue requests as the user types something, for example with <code>ractive.observe</code>.</p>
+
+		<p>The following demo uses jQuery's AJAX function to query Ractive issues by id from GitHub's api as you type. It uses promise chaining to modify the returned object in the error case.</p>
+
+		<p><small>Two caveats with the demo: It uses CORS, so you need a recent browser. The promise adaptor should work everywhere though. Second, GitHub's anonymous API is heavily rate limited, so you'll get errors if you're clicking around too much.</small></p>
 
 		<div id='demo' class='clearfix'></div>
 

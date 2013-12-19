@@ -3,7 +3,7 @@ Ractive.js Promise adaptor plugin
 
 *Find more Ractive.js plugins at [ractivejs.org/plugins](http://ractivejs.org/plugins)*
 
-[See the demo here.](TODO)
+[See the demo here.](http://lluchs.github.io/Ractive-adaptors-Promise/)
 
 Usage
 -----
@@ -22,8 +22,16 @@ Or, if you're using a module loader, require this module:
 require( 'Ractive-adaptors-Promise' );
 ```
 
-**plugin-specific instructions to go here...**
+Add the plugin to the Ractive options:
 
+```js
+ractive = new Ractive({
+	// ...
+	adaptors: [ 'Promise' ]
+});
+```
+
+[See the demo for an example.](http://lluchs.github.io/Ractive-adaptors-Promise/)
 
 
 License
