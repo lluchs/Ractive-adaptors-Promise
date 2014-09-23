@@ -65,7 +65,7 @@
 
 	<!-- Dependencies -->
 	<script src='http://code.jquery.com/jquery-2.0.3.min.js'></script>
-	<script src='lib/Ractive-legacy.js'></script>
+	<script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
 	<script src='Ractive-adaptors-Promise.js'></script>
 
 	<!-- Demo code -->
@@ -73,7 +73,7 @@
 		ractive = new Ractive({
 			el: 'demo',
 			template: '#demo-template',
-			adaptors: [ 'Promise' ],
+			adapt: [ 'Promise' ],
 			data: { id: 1 }
 		});
 		ractive.observe( 'id', function ( id ) {

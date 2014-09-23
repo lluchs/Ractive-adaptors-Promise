@@ -14,7 +14,7 @@
 			el: fixture,
 			template: '<p>{{promise.val}}</p>',
 			data: { promise: deferred.promise },
-			adaptors: [ 'Promise' ]
+			adapt: [ 'Promise' ]
 		});
 
 		deferred.resolve( { val: 'value' } );
@@ -34,7 +34,7 @@
 			el: fixture,
 			template: '<p>{{promise.val}}</p>',
 			data: { promise: deferred.promise },
-			adaptors: [ 'Promise' ]
+			adapt: [ 'Promise' ]
 		});
 
 		deferred.reject( { val: 'value' } );
@@ -54,7 +54,7 @@
 			el: fixture,
 			template: '<p>{{promise.then}}</p>',
 			data: { promise: deferred.promise },
-			adaptors: [ 'Promise' ]
+			adapt: [ 'Promise' ]
 		});
 
 		t.equal( ractive.find( 'p' ).innerHTML, '' );
@@ -69,7 +69,7 @@
 			el: fixture,
 			template: '<p>{{promise.val}}</p>',
 			data: { promise: deferreds[0].promise },
-			adaptors: [ 'Promise' ]
+			adapt: [ 'Promise' ]
 		});
 
 		ractive.set( 'promise', deferreds[1].promise );
